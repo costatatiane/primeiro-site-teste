@@ -1,62 +1,71 @@
 body{
     margin: 0;
+    overflow-x: hidden;
 }
 
-h1{
-    position: absolute;
+header{
+    display: flex;
+    width: 100vw;
+    background-image: url(img/background-header.jpg);
+    position: fixed;
+    height: 10vh;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+header div h1{
     font-family: 'Satisfy', cursive;
     color: white;
-    font-size: 40px;
-    margin: 10px 0px 0px 15px;
+    font-size: 28pt;
+    margin: 20px 0 0 20px;
 }
 
-header img{
-    display: block;
-    width: 100%;
-    height: 70px;
+header a{
+    text-decoration: none;
+    display: none;
 }
 
-header li{
-    display: inline;
-    position: relative;
-    top: -40px;
-    left: 1000px;
-    right: 100px;
-    font-family: 'News Cycle', sans-serif;
-    color: white;
+.principal{
+    margin-top: 10vh;
+    width: 100vw;
+    max-width: 500px;
 }
 
-main img{
-    display: absolute;
-    width: 30%;
-    align-items: center;
+#segunda{
+    display: flex;
 }
 
 footer{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.botao1 {
-    padding: 0;
-    border: 0; 
-    background: transparent url("img/botao-fb.png") center center no-repeat;
-    width: 80px;
-    height: 80px;
-    }
-
-.botao2 {
-    padding: 0;
-    border: 0; 
-    background: transparent url("img/botao-ig.png") center center no-repeat;
-    width: 80px;
-    height: 80px;
+    justify-content: center;
 }
 
-.botao3 {
-    padding: 0;
-    border: 0; 
-    background: transparent url("img/botao-wpp.png") center center no-repeat;
+.botao1{
+    display: block;
+    background-image: url(img/botao-fb.png);
+    width: 60px;
+    height: 80px;
+    background-color: white;
+    border: none;
+    margin: 0 10px;
+}
+
+.botao2{
+    display: block;
+    background-image: url(img/botao-ig.png);
     width: 80px;
     height: 80px;
+    background-color: white;
+    border: none;
+    margin: 0 10px;
+}
+
+.botao3{
+    display: block;
+    background-image: url(img/botao-wpp.png);
+    width: 70px;
+    height: 80px;
+    background-color: white;
+    border: none;
+    margin: 0 10px;
 }
